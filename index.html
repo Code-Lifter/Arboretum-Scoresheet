@@ -101,6 +101,14 @@
                 <i class="fas fa-rotate-right mr-1"></i> New Game
             </button>
         </div>
+        <!-- Footer / Totals -->
+        <div class="bg-slate-800 text-white z-30 border-t-4 border-slate-600 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] flex-none">
+             <table class="w-full table-fixed">
+                <tfoot id="tableFooter">
+                    <!-- Footer injected by JS -->
+                </tfoot>
+             </table>
+        </div>
 
         <!-- Scrollable Score Area -->
         <div class="flex-grow bg-blue-50/30 overflow-y-auto no-scrollbar relative">
@@ -114,14 +122,6 @@
             </table>
         </div>
         
-        <!-- Footer / Totals -->
-        <div class="bg-slate-800 text-white z-30 border-t-4 border-slate-600 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] flex-none">
-             <table class="w-full table-fixed">
-                <tfoot id="tableFooter">
-                    <!-- Footer injected by JS -->
-                </tfoot>
-             </table>
-        </div>
         
         <!-- Rules Banner -->
         <div class="bg-slate-200 p-2 text-[10px] text-slate-500 text-center uppercase tracking-wide flex-none border-t border-slate-300 flex justify-center items-center gap-2">
@@ -137,15 +137,14 @@
             <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fas fa-exclamation-triangle text-red-500 text-xl"></i>
             </div>
-            <h3 class="font-header text-xl text-slate-800 mb-2">New Game?</h3>
-            <p class="text-slate-600 text-sm mb-6">Do you want to keep the current player names or clear everything?</p>
+            <h3 class="font-header text-xl text-slate-800 mb-2">Reset...</h3>
             
             <div class="flex flex-col gap-2">
                 <button onclick="confirmReset(true)" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors text-sm">
-                    Keep Names & Clear Scores
+                    Scores
                 </button>
                 <button onclick="confirmReset(false)" class="w-full bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 font-bold py-2 px-4 rounded transition-colors text-sm">
-                    Clear Everything
+                    Score & Names
                 </button>
                 <button onclick="closeResetModal()" class="mt-2 text-slate-400 hover:text-slate-600 text-xs font-bold uppercase tracking-widest">
                     Cancel
